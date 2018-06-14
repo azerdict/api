@@ -25,4 +25,4 @@ before_script:
 
 script:
   - php bin/console lint:yaml config/
-  - php vendor/phpunit/phpunit/phpunit -c app src/
+  - php bin/phpunit

@@ -13,8 +13,8 @@ cache:
 before_install:
   - phpenv config-rm xdebug.ini
   - INI_FILE=~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini;
-  - echo "memory_limit=1G" >> $INI_FILE;
-  - echo 'date.timezone = "Europe/Istanbul"' >> $INI_FILE;
+  - echo "memory_limit=256M" >> $INI_FILE;
+  - echo 'date.timezone = "Asia/Baku"' >> $INI_FILE;
 
 before_script:
   - composer self-update

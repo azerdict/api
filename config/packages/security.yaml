@@ -1,0 +1,22 @@
+security:
+    providers:
+        api_user_provider:
+            entity:
+                class: App\Entity\ApiUser
+                property: apiKey
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            anonymous: ~
+            logout: ~
+            guard:
+                authenticators:
+                    - App\Security\TokenAuthenticator
+            stateless: true
+
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+         - { path: ^/dictionary, roles: ROLE_API_USER }

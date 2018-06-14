@@ -1,0 +1,4 @@
+api:
+    resource: ../src/Controller/DictionaryController.php
+    type: annotation
+    prefix: /dictionary

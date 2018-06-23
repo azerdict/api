@@ -4,6 +4,8 @@
     </a>
 </h1>
 
+[![Build Status](https://travis-ci.com/azerdict/api.svg?branch=master)](https://travis-ci.com/azerdict/api)
+
 [azerdict.com](https://azerdict.com) is an open-source free dictionary service.
 This is the repository of azerdict API that powers the website and mobile apps. It is built on top of [Symfony](https://symfony.com).
 

@@ -12,12 +12,11 @@ use App\Entity\Dictionary\EnglishAzerbaijani;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 /**
  * Class DictionaryController is designed to handle all dictionary searches.
  */
-class DictionaryController extends Controller
+class DictionaryController extends BaseController
 {
     /**
      * @Route("/english", name="english")
@@ -28,6 +27,12 @@ class DictionaryController extends Controller
      */
     public function english(Request $request)
     {
+        if (!$request->query->has('term')) {
+            return $this->errors([
+                'term' => 'required',
+            ]);
+        }
+
         $result = $this->getDoctrine()
             ->getRepository(EnglishAzerbaijani::class)
             ->search($request->query->get('term'));

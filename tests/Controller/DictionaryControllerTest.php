@@ -10,6 +10,16 @@ namespace App\Tests\Controller;
 
 class DictionaryControllerTest extends ApiTestCase
 {
+    public function testEnglishValidation()
+    {
+        $this->client->request('GET', '/dictionary/english');
+
+        $this->assertStatusCode(422);
+        $content = $this->getContentAsArray();
+        $this->assertArrayHasKey('errors', $content);
+        $this->assertArrayHasKey('term', $content['errors']);
+    }
+
     public function testEnglishNotFound()
     {
         $this->client->request('GET', '/dictionary/english', [

@@ -14,6 +14,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
+ * @Route("/dictionary")
+ *
  * Class DictionaryController is designed to handle all dictionary searches.
  */
 class DictionaryController extends BaseController

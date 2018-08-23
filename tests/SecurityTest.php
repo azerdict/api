@@ -15,7 +15,7 @@ class SecurityTest extends ApiTestCase
     public function testRequestWithoutKey()
     {
         $client = parent::createClient();
-        $client->request('GET', '/dictionary/english', [
+        $client->request('GET', '/dictionary/english-azerbaijani', [
             'term' => 'lorem ipsum',
         ]);
 
@@ -31,7 +31,7 @@ class SecurityTest extends ApiTestCase
         $client = parent::createClient([], [
             'HTTP_X_AUTH_TOKEN' => 'key_does_not_exist',
         ]);
-        $client->request('GET', '/dictionary/english', [
+        $client->request('GET', '/dictionary/english-azerbaijani', [
             'term' => 'lorem ipsum',
         ]);
 

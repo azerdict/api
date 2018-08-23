@@ -12,7 +12,7 @@ class DictionaryControllerTest extends ApiTestCase
 {
     public function testEnglishValidation()
     {
-        $this->client->request('GET', '/dictionary/english');
+        $this->client->request('GET', '/dictionary/english-azerbaijani');
 
         $this->assertStatusCode(422);
         $content = $this->getContentAsArray();
@@ -22,7 +22,7 @@ class DictionaryControllerTest extends ApiTestCase
 
     public function testEnglishNotFound()
     {
-        $this->client->request('GET', '/dictionary/english', [
+        $this->client->request('GET', '/dictionary/english-azerbaijani', [
             'term' => 'something-does-not-exist',
         ]);
 
@@ -32,7 +32,7 @@ class DictionaryControllerTest extends ApiTestCase
 
     public function testEnglish()
     {
-        $this->client->request('GET', '/dictionary/english', [
+        $this->client->request('GET', '/dictionary/english-azerbaijani', [
             'term' => 'abandon',
         ]);
 
@@ -56,7 +56,7 @@ class DictionaryControllerTest extends ApiTestCase
      */
     public function testEnglishFulltext(string $term, array $result)
     {
-        $this->client->request('GET', '/dictionary/english', [
+        $this->client->request('GET', '/dictionary/english-azerbaijani', [
             'term' => $term,
         ]);
 

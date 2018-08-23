@@ -8,9 +8,9 @@
 
 namespace App\Controller;
 
-use App\Entity\Dictionary\EnglishAzerbaijani;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
+use App\Dictionary\DictionaryInterface;
+use App\Dictionary\EnglishAzerbaijani;
+use Symfony\Component\HttpFoundation\{JsonResponse,Request};
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -21,13 +21,17 @@ use Symfony\Component\Routing\Annotation\Route;
 class DictionaryController extends BaseController
 {
     /**
-     * @Route("/english", name="english")
+     * @Route("/{name}",
+     *     requirements={"name": "english-azerbaijani"},
+     *     name="dictionary"
+     * )
      *
      * @param Request $request
+     * @param string $name
      *
      * @return JsonResponse
      */
-    public function english(Request $request)
+    public function english(Request $request, string $name) : JsonResponse
     {
         if (!$request->query->has('term')) {
             return $this->errors([
@@ -35,9 +39,10 @@ class DictionaryController extends BaseController
             ]);
         }
 
-        $result = $this->getDoctrine()
-            ->getRepository(EnglishAzerbaijani::class)
-            ->search($request->query->get('term'));
+        /** @var DictionaryInterface $dictionary */
+        $dictionary = $this->get('App\\Dictionary\\'.str_replace(' ', '', ucwords(str_replace('-', ' ', $name))));
+
+        $result = $dictionary->search($request->query->get('term'));
 
         $statusCode = empty($result) ? JsonResponse::HTTP_NOT_FOUND : JsonResponse::HTTP_OK;
 

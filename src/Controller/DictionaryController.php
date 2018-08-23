@@ -44,8 +44,8 @@ class DictionaryController extends BaseController
 
         $result = $dictionary->search($request->query->get('term'));
 
-        $statusCode = empty($result) ? JsonResponse::HTTP_NOT_FOUND : JsonResponse::HTTP_OK;
+        $statusCode = $result->hasResult() ? JsonResponse::HTTP_OK : JsonResponse::HTTP_NOT_FOUND;
 
-        return $this->json($result, $statusCode);
+        return $this->json($result->getResult(), $statusCode);
     }
 }

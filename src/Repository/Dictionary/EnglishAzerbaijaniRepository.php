@@ -28,11 +28,11 @@ class EnglishAzerbaijaniRepository extends ServiceEntityRepository
     /**
      * @todo: implement $safeSearch and $limit.
      *
-     * @param $term
+     * @param string $term
      *
      * @return array
      */
-    public function search($term)
+    public function search(string $term)
     {
         $safeSearch = false;
         $limit = 300;

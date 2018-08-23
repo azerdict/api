@@ -8,32 +8,44 @@
 
 namespace App\Controller;
 
-use App\Entity\Dictionary\EnglishAzerbaijani;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
+use App\Dictionary\DictionaryInterface;
+use App\Dictionary\EnglishAzerbaijani;
+use Symfony\Component\HttpFoundation\{JsonResponse,Request};
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 /**
+ * @Route("/dictionary")
+ *
  * Class DictionaryController is designed to handle all dictionary searches.
  */
-class DictionaryController extends Controller
+class DictionaryController extends BaseController
 {
     /**
-     * @Route("/english", name="english")
+     * @Route("/{name}",
+     *     requirements={"name": "english-azerbaijani"},
+     *     name="dictionary"
+     * )
      *
      * @param Request $request
+     * @param string $name
      *
      * @return JsonResponse
      */
-    public function english(Request $request)
+    public function english(Request $request, string $name) : JsonResponse
     {
-        $result = $this->getDoctrine()
-            ->getRepository(EnglishAzerbaijani::class)
-            ->search($request->query->get('term'));
+        if (!$request->query->has('term')) {
+            return $this->errors([
+                'term' => 'required',
+            ]);
+        }
 
-        $statusCode = empty($result) ? JsonResponse::HTTP_NOT_FOUND : JsonResponse::HTTP_OK;
+        /** @var DictionaryInterface $dictionary */
+        $dictionary = $this->get('App\\Dictionary\\'.str_replace(' ', '', ucwords(str_replace('-', ' ', $name))));
 
-        return $this->json($result, $statusCode);
+        $result = $dictionary->search($request->query->get('term'));
+
+        $statusCode = $result->hasResult() ? JsonResponse::HTTP_OK : JsonResponse::HTTP_NOT_FOUND;
+
+        return $this->json($result->getResult(), $statusCode);
     }
 }

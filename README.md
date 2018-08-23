@@ -46,7 +46,7 @@ Now you are ready to test it with your favorite browser or API development clien
 Endpoints
 ---------
 
-* GET `/dictionary/english` with `term` query param.
+* GET `/dictionary/english-azerbaijani` with `term` query param.
 
 
 Testing

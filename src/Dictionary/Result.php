@@ -17,9 +17,6 @@ class Result
         }
     }
 
-    /**
-     * @return array
-     */
     public function getResult() : array
     {
         $totalCount = 0;

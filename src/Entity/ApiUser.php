@@ -35,7 +35,7 @@ class ApiUser implements UserInterface
      */
     private $apiKey;
 
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
@@ -66,34 +66,23 @@ class ApiUser implements UserInterface
 
     /**
      * Returns the roles granted to the user.
-     *
-     * @return Role[] The user roles
      */
     public function getRoles()
     {
-        return [new Role('ROLE_API_USER')];
+        return ['ROLE_API_USER'];
     }
 
-    /**
-     * @return string|void
-     */
     public function getPassword()
     {
-        return;
+        throw new \InvalidArgumentException();
     }
 
-    /**
-     * @return null|string|void
-     */
     public function getSalt()
     {
-        return;
+        throw new \InvalidArgumentException();
     }
 
-    /**
-     * Not used.
-     */
-    public function eraseCredentials()
+    public function eraseCredentials(): void
     {
         return;
     }

@@ -8,16 +8,26 @@
 
 namespace App\Extensions\Doctrine;
 
+use Doctrine\ORM\Query\AST\InputParameter;
+use Doctrine\ORM\Query\AST\PathExpression;
 use Doctrine\ORM\Query\Lexer;
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
+use Doctrine\ORM\Query\QueryException;
 
 /**
  * "MATCH_AGAINST" "(" {StateFieldPathExpression ","}* InParameter {Literal}? ")"
  */
 class MatchAgainst extends FunctionNode
 {
-    public $columns = [];
-    public $needle;
+    /**
+     * @var PathExpression[]
+     */
+    private $columns = [];
+
+    /**
+     * @var InputParameter|string|null
+     */
+    private $needle;
 
     public function parse(\Doctrine\ORM\Query\Parser $parser)
     {
@@ -35,7 +45,11 @@ class MatchAgainst extends FunctionNode
 
     public function getSql(\Doctrine\ORM\Query\SqlWalker $sqlWalker)
     {
-        $haystack = null;
+        if (!$this->needle instanceof InputParameter) {
+            throw QueryException::syntaxError('');
+        }
+
+        $haystack = '';
         $first = true;
         foreach ($this->columns as $column) {
             $first ? $first = false : $haystack .= ', ';
@@ -46,5 +60,4 @@ class MatchAgainst extends FunctionNode
 
         return $query;
     }
-
 }

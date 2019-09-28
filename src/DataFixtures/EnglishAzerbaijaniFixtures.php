@@ -14,23 +14,13 @@ use Doctrine\Common\Persistence\ObjectManager;
 
 class EnglishAzerbaijaniFixtures extends Fixture
 {
-    /**
-     * Load data fixtures with the passed EntityManager
-     *
-     * @param ObjectManager $manager
-     */
-    public function load(ObjectManager $manager)
+    public function load(ObjectManager $manager): void
     {
         $words = json_decode(file_get_contents(__DIR__.'/Data/EnglishAzerbaijani.json'));
 
         foreach ($words as $word) {
-            $englishAzerbaijani = new EnglishAzerbaijani();
-            $englishAzerbaijani->setEnglish($word->english);
-            $englishAzerbaijani->setAzerbaijani($word->azerbaijani);
-            $englishAzerbaijani->setTerminology($word->terminology);
-            $englishAzerbaijani->setPartOfSpeech($word->partOfSpeech);
+            $englishAzerbaijani = new EnglishAzerbaijani($word->english, $word->azerbaijani, $word->terminology, $word->partOfSpeech);
             $englishAzerbaijani->setMeaning($word->meaning);
-            $englishAzerbaijani->setSource($word->source);
             $englishAzerbaijani->setExplanation($word->explanation);
             $englishAzerbaijani->setTranscription($word->transcription);
 

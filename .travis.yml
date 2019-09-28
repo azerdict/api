@@ -30,6 +30,7 @@ script:
   - php bin/console lint:yaml config/
   - php bin/console doctrine:schema:validate
   - php bin/phpunit
+  - php vendor/bin/psalm
 
 notifications:
   email: false

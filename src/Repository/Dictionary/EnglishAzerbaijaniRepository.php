@@ -25,18 +25,8 @@ class EnglishAzerbaijaniRepository extends ServiceEntityRepository
         parent::__construct($registry, EnglishAzerbaijani::class);
     }
 
-    /**
-     * @todo: implement $safeSearch and $limit.
-     *
-     * @param string $term
-     *
-     * @return array
-     */
-    public function search(string $term)
+    public function search(string $term, bool $safeSearch = false): array
     {
-        $safeSearch = false;
-        $limit = 300;
-
         $qb = $this->createQueryBuilder('ea')
             ->where('ea.azerbaijani = :term')
             ->orWhere('ea.english = :term')
@@ -52,7 +42,7 @@ class EnglishAzerbaijaniRepository extends ServiceEntityRepository
         return $qb->orderBy('ea.partOfSpeech', 'ASC')
             ->addOrderBy('ea.meaning')
             ->addOrderBy('ea.terminology')
-            ->setMaxResults($limit)
+            ->setMaxResults(300)
             ->getQuery()
             ->getArrayResult();
     }

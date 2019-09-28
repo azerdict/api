@@ -4,8 +4,14 @@ namespace App\Dictionary;
 
 class Result
 {
+    /**
+     * @var array
+     */
     private $data = [];
 
+    /**
+     * @var array
+     */
     private $dictionaries = [];
 
     public function addData(string $name, array $data) : void

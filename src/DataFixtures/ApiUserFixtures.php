@@ -14,12 +14,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 
 class ApiUserFixtures extends Fixture
 {
-    /**
-     * Load data fixtures with the passed EntityManager
-     *
-     * @param ObjectManager $manager
-     */
-    public function load(ObjectManager $manager)
+    public function load(ObjectManager $manager): void
     {
         $user = new ApiUser();
         $user->setUsername('seferov');

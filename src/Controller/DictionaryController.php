@@ -21,26 +21,15 @@ use Symfony\Component\Routing\Annotation\Route;
 class DictionaryController extends BaseController
 {
     /**
-     * @Route("/{name}",
-     *     requirements={"name": "english-azerbaijani"},
-     *     name="dictionary"
-     * )
-     *
-     * @param Request $request
-     * @param string $name
-     *
-     * @return JsonResponse
+     * @Route("/english-azerbaijani", name="english")
      */
-    public function english(Request $request, string $name) : JsonResponse
+    public function english(Request $request, EnglishAzerbaijani $dictionary) : JsonResponse
     {
         if (!$request->query->has('term')) {
             return $this->errors([
                 'term' => 'required',
             ]);
         }
-
-        /** @var DictionaryInterface $dictionary */
-        $dictionary = $this->get('App\\Dictionary\\'.str_replace(' ', '', ucwords(str_replace('-', ' ', $name))));
 
         $result = $dictionary->search($request->query->get('term'));
 

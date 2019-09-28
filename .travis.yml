@@ -3,6 +3,9 @@ language: php
 php:
   - '7.1'
 
+env:
+  - SYMFONY_DEPRECATIONS_HELPER=max[self]=0
+
 services:
   - mysql
 
@@ -27,3 +30,6 @@ script:
   - php bin/console lint:yaml config/
   - php bin/console doctrine:schema:validate
   - php bin/phpunit
+
+notifications:
+  email: false

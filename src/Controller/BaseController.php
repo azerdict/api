@@ -8,10 +8,10 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
-abstract class BaseController extends Controller
+abstract class BaseController extends AbstractController
 {
     protected function errors(iterable $errors) : JsonResponse
     {

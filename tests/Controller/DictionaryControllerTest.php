@@ -49,7 +49,7 @@ class DictionaryControllerTest extends ApiTestCase
         $this->assertSame(3, $word['partOfSpeech']);
         $this->assertNull($word['transcription']);
         $this->assertNull($word['explanation']);
-        $this->assertSame('1', $word['source']);
+        $this->assertSame('9', $word['source']);
     }
 
     /**
@@ -87,7 +87,7 @@ class DictionaryControllerTest extends ApiTestCase
                             'transcription' => null,
                             'meaning' => 1,
                             'explanation' => null,
-                            'source' => '1',
+                            'source' => '9',
                         ],
                     ],
                 ],
@@ -104,7 +104,7 @@ class DictionaryControllerTest extends ApiTestCase
                             'transcription' => null,
                             'meaning' => 1,
                             'explanation' => null,
-                            'source' => '1',
+                            'source' => '9',
                         ],
                     ],
                 ],
@@ -121,7 +121,7 @@ class DictionaryControllerTest extends ApiTestCase
                             'transcription' => null,
                             'meaning' => 1,
                             'explanation' => null,
-                            'source' => '1',
+                            'source' => '9',
                         ],
                     ],
                 ],

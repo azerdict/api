@@ -54,10 +54,8 @@ class DictionaryControllerTest extends ApiTestCase
 
     /**
      * @dataProvider englishFulltextData
-     * @todo create english repository test and move this to there.
      *
-     * @param string $term
-     * @param array $result
+     * @todo create english repository test and move this to there.
      */
     public function testEnglishFulltext(string $term, array $result)
     {

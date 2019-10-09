@@ -1,0 +1,35 @@
+<?php
+
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__)
+    ->ignoreDotFiles(true)
+    ->ignoreVCS(true)
+    ->exclude([
+        'bin/',
+        'var/',
+        'vendor/',
+        'src/Migrations/'
+    ])
+    ->notPath('config/bootstrap.php')
+    ->files()
+    ->name('*.php');
+
+return PhpCsFixer\Config::create()
+    ->setUsingCache(true)
+    ->setRiskyAllowed(true)
+    ->setFinder($finder)
+    ->setRules([
+        '@Symfony' => true,
+        '@Symfony:risky' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'binary_operator_spaces' => ['align_double_arrow' => false],
+        'combine_consecutive_unsets' => true,
+        'no_useless_else' => true,
+        'no_useless_return' => true,
+        'ordered_imports' => true,
+        'strict_comparison' => false,
+        'general_phpdoc_annotation_remove' => ['annotations' => ['author', 'package']],
+        'mb_str_functions' => true,
+        'no_superfluous_phpdoc_tags' => true,
+        'phpdoc_summary' => false,
+    ]);

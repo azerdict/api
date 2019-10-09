@@ -19,9 +19,13 @@ before_install:
   - echo "memory_limit=256M" >> $INI_FILE;
   - echo 'date.timezone = "Asia/Baku"' >> $INI_FILE;
 
-before_script:
+install:
   - composer self-update
   - composer install
+  - composer global require friendsofphp/php-cs-fixer
+  - export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+before_script:
   - php bin/console doctrine:database:create --env=test
   - php bin/console doctrine:migrations:migrate --no-interaction --env=test
   - php bin/console doctrine:fixtures:load --no-interaction --env=test
@@ -31,6 +35,7 @@ script:
   - php bin/console doctrine:schema:validate
   - php bin/phpunit
   - php vendor/bin/psalm
+  - php-cs-fixer fix --config=.php_cs.dist -v --dry-run
 
 notifications:
   email: false

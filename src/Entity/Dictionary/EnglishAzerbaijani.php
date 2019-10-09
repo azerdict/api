@@ -76,7 +76,7 @@ class EnglishAzerbaijani
     private $explanation;
 
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(type="string", length=100)
      */

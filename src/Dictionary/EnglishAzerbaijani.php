@@ -13,13 +13,13 @@ class EnglishAzerbaijani implements DictionaryInterface
         $this->repository = $englishAzerbaijaniRepository;
     }
 
-    public function search(string $term) : Result
+    public function search(string $term): Result
     {
         $dbResult = $this->repository->search($term);
         $result = new Result();
 
         foreach ($dbResult as $item) {
-            $name = false !== strpos($item['english'], $term) ? 'english_azerbaijani' : 'azerbaijani_english';
+            $name = false !== mb_strpos($item['english'], $term) ? 'english_azerbaijani' : 'azerbaijani_english';
 
             $result->addData($name, $item);
         }

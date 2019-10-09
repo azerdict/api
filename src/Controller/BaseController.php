@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 abstract class BaseController extends AbstractController
 {
-    protected function errors(iterable $errors) : JsonResponse
+    protected function errors(iterable $errors): JsonResponse
     {
         return $this->json([
             'errors' => $errors,

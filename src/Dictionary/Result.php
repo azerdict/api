@@ -14,22 +14,22 @@ class Result
      */
     private $dictionaries = [];
 
-    public function addData(string $name, array $data) : void
+    public function addData(string $name, array $data): void
     {
         $this->data[$name][] = $data;
 
-        if (!in_array($name, $this->dictionaries)) {
+        if (!\in_array($name, $this->dictionaries)) {
             $this->dictionaries[] = $name;
         }
     }
 
-    public function getResult() : array
+    public function getResult(): array
     {
         $totalCount = 0;
         $meta = [];
 
         foreach ($this->dictionaries as $dictionary) {
-            $meta[$dictionary]['count'] = count($this->data[$dictionary]);
+            $meta[$dictionary]['count'] = \count($this->data[$dictionary]);
             $totalCount += $meta[$dictionary]['count'];
         }
 
@@ -41,7 +41,7 @@ class Result
         ];
     }
 
-    public function hasResult() : bool
+    public function hasResult(): bool
     {
         return !empty($this->data);
     }

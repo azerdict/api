@@ -8,9 +8,9 @@
 
 namespace App\Controller;
 
-use App\Dictionary\DictionaryInterface;
 use App\Dictionary\EnglishAzerbaijani;
-use Symfony\Component\HttpFoundation\{JsonResponse,Request};
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -23,7 +23,7 @@ class DictionaryController extends BaseController
     /**
      * @Route("/english-azerbaijani", name="english")
      */
-    public function english(Request $request, EnglishAzerbaijani $dictionary) : JsonResponse
+    public function english(Request $request, EnglishAzerbaijani $dictionary): JsonResponse
     {
         if (!$request->query->has('term')) {
             return $this->errors([

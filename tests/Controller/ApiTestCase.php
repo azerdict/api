@@ -35,9 +35,6 @@ abstract class ApiTestCase extends WebTestCase
         unset($this->client);
     }
 
-    /**
-     * @param int $statusCode
-     */
     protected function assertStatusCode(int $statusCode)
     {
         $this->assertEquals($statusCode, $this->client->getResponse()->getStatusCode());

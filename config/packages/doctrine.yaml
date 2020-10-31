@@ -6,9 +6,6 @@ doctrine:
         proxy_namespace: Proxies
         proxy_dir: "%kernel.cache_dir%/doctrine/orm/Proxies"
         default_entity_manager: default
-        metadata_cache_driver: array
-        query_cache_driver: array
-        result_cache_driver: array
         mappings:
             default_mapping:
                 type: annotation
@@ -25,3 +22,5 @@ doctrine:
                 MATCH_AGAINST: App\Extensions\Doctrine\MatchAgainst
     dbal:
         url: '%env(DATABASE_URL)%'
+        charset: UTF8
+        server_version: '5.7'

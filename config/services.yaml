@@ -20,3 +20,5 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
+    App\EventListener\LocaleListener:
+        tags: ['kernel.event_subscriber']

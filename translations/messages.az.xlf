@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="az" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="terminology.1">
+                <source>terminology.1</source>
+                <target>ümumi</target>
+            </trans-unit>
+            <trans-unit id="terminology.2">
+                <source>terminology.2</source>
+                <target>biological</target>
+            </trans-unit>
+            <trans-unit id="terminology.3">
+                <source>terminology.3</source>
+                <target>danışıq dili</target>
+            </trans-unit>
+            <trans-unit id="terminology.4">
+                <source>terminology.4</source>
+                <target>botanical</target>
+            </trans-unit>
+            <trans-unit id="terminology.5">
+                <source>terminology.5</source>
+                <target>medical</target>
+            </trans-unit>
+            <trans-unit id="terminology.6">
+                <source>terminology.6</source>
+                <target>American</target>
+            </trans-unit>
+            <trans-unit id="terminology.7">
+                <source>terminology.7</source>
+                <target>law</target>
+            </trans-unit>
+            <trans-unit id="terminology.8">
+                <source>terminology.8</source>
+                <target>philosophical</target>
+            </trans-unit>
+            <trans-unit id="terminology.9">
+                <source>terminology.9</source>
+                <target>physics</target>
+            </trans-unit>
+            <trans-unit id="terminology.10">
+                <source>terminology.10</source>
+                <target>physiological</target>
+            </trans-unit>
+            <trans-unit id="terminology.11">
+                <source>terminology.11</source>
+                <target>mathematics</target>
+            </trans-unit>
+            <trans-unit id="terminology.12">
+                <source>terminology.12</source>
+                <target>sport</target>
+            </trans-unit>
+            <trans-unit id="terminology.13">
+                <source>terminology.13</source>
+                <target>figurative meaning</target>
+            </trans-unit>
+            <trans-unit id="terminology.14">
+                <source>terminology.14</source>
+                <target>economy</target>
+            </trans-unit>
+            <trans-unit id="terminology.15">
+                <source>terminology.15</source>
+                <target>art</target>
+            </trans-unit>
+            <trans-unit id="terminology.16">
+                <source>terminology.16</source>
+                <target>anatomical</target>
+            </trans-unit>
+            <trans-unit id="terminology.17">
+                <source>terminology.17</source>
+                <target>anthropological</target>
+            </trans-unit>
+            <trans-unit id="terminology.18">
+                <source>terminology.18</source>
+                <target>parenthesis</target>
+            </trans-unit>
+            <trans-unit id="terminology.19">
+                <source>terminology.19</source>
+                <target>archaism</target>
+            </trans-unit>
+            <trans-unit id="terminology.20">
+                <source>terminology.20</source>
+                <target>archeological</target>
+            </trans-unit>
+            <trans-unit id="terminology.21">
+                <source>terminology.21</source>
+                <target>astronomical</target>
+            </trans-unit>
+            <trans-unit id="terminology.22">
+                <source>terminology.22</source>
+                <target>computer</target>
+            </trans-unit>
+            <trans-unit id="terminology.23">
+                <source>terminology.23</source>
+                <target>proverb</target>
+            </trans-unit>
+            <trans-unit id="terminology.24">
+                <source>terminology.24</source>
+                <target>aeronautics</target>
+            </trans-unit>
+            <trans-unit id="terminology.25">
+                <source>terminology.25</source>
+                <target>horticultural</target>
+            </trans-unit>
+            <trans-unit id="terminology.26">
+                <source>terminology.26</source>
+                <target>bacteriological</target>
+            </trans-unit>
+            <trans-unit id="terminology.27">
+                <source>terminology.27</source>
+                <target>veterinary</target>
+            </trans-unit>
+            <trans-unit id="terminology.28">
+                <source>terminology.28</source>
+                <target>zoological</target>
+            </trans-unit>
+            <trans-unit id="terminology.29">
+                <source>terminology.29</source>
+                <target>geographical</target>
+            </trans-unit>
+            <trans-unit id="terminology.30">
+                <source>terminology.30</source>
+                <target>office</target>
+            </trans-unit>
+            <trans-unit id="terminology.31">
+                <source>terminology.31</source>
+                <target>nautical</target>
+            </trans-unit>
+            <trans-unit id="terminology.32">
+                <source>terminology.32</source>
+                <target>dialect</target>
+            </trans-unit>
+            <trans-unit id="terminology.33">
+                <source>terminology.33</source>
+                <target>linguistic</target>
+            </trans-unit>
+            <trans-unit id="terminology.34">
+                <source>terminology.34</source>
+                <target>religion</target>
+            </trans-unit>
+            <trans-unit id="terminology.35">
+                <source>terminology.35</source>
+                <target>diplomatic</target>
+            </trans-unit>
+            <trans-unit id="terminology.36">
+                <source>terminology.36</source>
+                <target>technical</target>
+            </trans-unit>
+            <trans-unit id="terminology.37">
+                <source>terminology.37</source>
+                <target>ecology</target>
+            </trans-unit>
+            <trans-unit id="terminology.38">
+                <source>terminology.38</source>
+                <target>electrical engineering</target>
+            </trans-unit>
+            <trans-unit id="terminology.39">
+                <source>terminology.39</source>
+                <target>scientific</target>
+            </trans-unit>
+            <trans-unit id="terminology.40">
+                <source>terminology.40</source>
+                <target>emphatic</target>
+            </trans-unit>
+            <trans-unit id="terminology.41">
+                <source>terminology.41</source>
+                <target>ethnographic</target>
+            </trans-unit>
+            <trans-unit id="terminology.42">
+                <source>terminology.42</source>
+                <target>euphemism</target>
+            </trans-unit>
+            <trans-unit id="terminology.43">
+                <source>terminology.43</source>
+                <target>pharmacological</target>
+            </trans-unit>
+            <trans-unit id="terminology.44">
+                <source>terminology.44</source>
+                <target>literature</target>
+            </trans-unit>
+            <trans-unit id="terminology.45">
+                <source>terminology.45</source>
+                <target>mythology</target>
+            </trans-unit>
+            <trans-unit id="terminology.46">
+                <source>terminology.46</source>
+                <target>folklore</target>
+            </trans-unit>
+            <trans-unit id="terminology.47">
+                <source>terminology.47</source>
+                <target>phonetic</target>
+            </trans-unit>
+            <trans-unit id="terminology.48">
+                <source>terminology.48</source>
+                <target>photography</target>
+            </trans-unit>
+            <trans-unit id="terminology.49">
+                <source>terminology.49</source>
+                <target>french</target>
+            </trans-unit>
+            <trans-unit id="terminology.50">
+                <source>terminology.50</source>
+                <target>geodesy</target>
+            </trans-unit>
+            <trans-unit id="terminology.51">
+                <source>terminology.51</source>
+                <target>geological</target>
+            </trans-unit>
+            <trans-unit id="terminology.52">
+                <source>terminology.52</source>
+                <target>geometrical</target>
+            </trans-unit>
+            <trans-unit id="terminology.53">
+                <source>terminology.53</source>
+                <target>military</target>
+            </trans-unit>
+            <trans-unit id="terminology.54">
+                <source>terminology.54</source>
+                <target>political</target>
+            </trans-unit>
+            <trans-unit id="terminology.55">
+                <source>terminology.55</source>
+                <target>idiomatic</target>
+            </trans-unit>
+            <trans-unit id="terminology.56">
+                <source>terminology.56</source>
+                <target>building</target>
+            </trans-unit>
+            <trans-unit id="terminology.57">
+                <source>terminology.57</source>
+                <target>irony</target>
+            </trans-unit>
+            <trans-unit id="terminology.58">
+                <source>terminology.58</source>
+                <target>jargon</target>
+            </trans-unit>
+            <trans-unit id="terminology.59">
+                <source>terminology.59</source>
+                <target>church</target>
+            </trans-unit>
+            <trans-unit id="terminology.60">
+                <source>terminology.60</source>
+                <target>chemistry</target>
+            </trans-unit>
+            <trans-unit id="terminology.61">
+                <source>terminology.61</source>
+                <target>ironical</target>
+            </trans-unit>
+            <trans-unit id="terminology.62">
+                <source>terminology.62</source>
+                <target>movie</target>
+            </trans-unit>
+            <trans-unit id="terminology.63">
+                <source>terminology.63</source>
+                <target>finance</target>
+            </trans-unit>
+            <trans-unit id="terminology.64">
+                <source>terminology.64</source>
+                <target>agricultural</target>
+            </trans-unit>
+            <trans-unit id="terminology.65">
+                <source>terminology.65</source>
+                <target>grammatical</target>
+            </trans-unit>
+            <trans-unit id="terminology.66">
+                <source>terminology.66</source>
+                <target>Latin</target>
+            </trans-unit>
+            <trans-unit id="terminology.67">
+                <source>terminology.67</source>
+                <target>architecture</target>
+            </trans-unit>
+            <trans-unit id="terminology.68">
+                <source>terminology.68</source>
+                <target>logic</target>
+            </trans-unit>
+            <trans-unit id="terminology.69">
+                <source>terminology.69</source>
+                <target>printing</target>
+            </trans-unit>
+            <trans-unit id="terminology.70">
+                <source>terminology.70</source>
+                <target>press</target>
+            </trans-unit>
+            <trans-unit id="terminology.71">
+                <source>terminology.71</source>
+                <target>mineralogy</target>
+            </trans-unit>
+            <trans-unit id="terminology.72">
+                <source>terminology.72</source>
+                <target>music</target>
+            </trans-unit>
+            <trans-unit id="terminology.73">
+                <source>terminology.73</source>
+                <target>book-keeping</target>
+            </trans-unit>
+            <trans-unit id="terminology.74">
+                <source>terminology.74</source>
+                <target>polite</target>
+            </trans-unit>
+            <trans-unit id="terminology.75">
+                <source>terminology.75</source>
+                <target>optics</target>
+            </trans-unit>
+            <trans-unit id="terminology.76">
+                <source>terminology.76</source>
+                <target>sporting</target>
+            </trans-unit>
+            <trans-unit id="terminology.77">
+                <source>terminology.77</source>
+                <target>psychology</target>
+            </trans-unit>
+            <trans-unit id="terminology.78">
+                <source>terminology.78</source>
+                <target>radio</target>
+            </trans-unit>
+            <trans-unit id="terminology.79">
+                <source>terminology.79</source>
+                <target>official language</target>
+            </trans-unit>
+            <trans-unit id="terminology.80">
+                <source>terminology.80</source>
+                <target>painting</target>
+            </trans-unit>
+            <trans-unit id="terminology.81">
+                <source>terminology.81</source>
+                <target>political-economy</target>
+            </trans-unit>
+            <trans-unit id="terminology.82">
+                <source>terminology.82</source>
+                <target>statistics</target>
+            </trans-unit>
+            <trans-unit id="terminology.83">
+                <source>terminology.83</source>
+                <target>poetical</target>
+            </trans-unit>
+            <trans-unit id="terminology.84">
+                <source>terminology.84</source>
+                <target>chess</target>
+            </trans-unit>
+            <trans-unit id="terminology.85">
+                <source>terminology.85</source>
+                <target>taboo</target>
+            </trans-unit>
+            <trans-unit id="terminology.86">
+                <source>terminology.86</source>
+                <target>history</target>
+            </trans-unit>
+            <trans-unit id="terminology.87">
+                <source>terminology.87</source>
+                <target>theatrical</target>
+            </trans-unit>
+            <trans-unit id="terminology.88">
+                <source>terminology.88</source>
+                <target>television</target>
+            </trans-unit>
+            <trans-unit id="terminology.89">
+                <source>terminology.89</source>
+                <target>commerce</target>
+            </trans-unit>
+            <trans-unit id="terminology.90">
+                <source>terminology.90</source>
+                <target>building</target>
+            </trans-unit>
+            <trans-unit id="terminology.91">
+                <source>terminology.91</source>
+                <target>typographical</target>
+            </trans-unit>
+            <trans-unit id="terminology.92">
+                <source>terminology.92</source>
+                <target>textile</target>
+            </trans-unit>
+            <trans-unit id="terminology.93">
+                <source>terminology.93</source>
+                <target>collective noun</target>
+            </trans-unit>
+            <trans-unit id="terminology.94">
+                <source>terminology.94</source>
+                <target>baby language</target>
+            </trans-unit>
+            <trans-unit id="terminology.95">
+                <source>terminology.95</source>
+                <target>jocular</target>
+            </trans-unit>
+            <trans-unit id="terminology.96">
+                <source>terminology.96</source>
+                <target>saying</target>
+            </trans-unit>
+            <trans-unit id="terminology.97">
+                <source>terminology.97</source>
+                <target>railway</target>
+            </trans-unit>
+            <trans-unit id="terminology.98">
+                <source>terminology.98</source>
+                <target>cooking</target>
+            </trans-unit>
+            <trans-unit id="terminology.99">
+                <source>terminology.99</source>
+                <target>polygraph</target>
+            </trans-unit>
+            <trans-unit id="terminology.100">
+                <source>terminology.100</source>
+                <target>geographical name</target>
+            </trans-unit>
+            <trans-unit id="terminology.101">
+                <source>terminology.101</source>
+                <target>geographical name</target>
+            </trans-unit>
+            <trans-unit id="terminology.102">
+                <source>terminology.102</source>
+                <target>rude word</target>
+            </trans-unit>
+            <trans-unit id="terminology.103">
+                <source>terminology.103</source>
+                <target>vulgar</target>
+            </trans-unit>
+            <trans-unit id="pos.1">
+                <source>pos.1</source>
+                <target>isim</target>
+            </trans-unit>
+            <trans-unit id="pos.2">
+                <source>pos.2</source>
+                <target>isim</target>
+            </trans-unit>
+            <trans-unit id="pos.3">
+                <source>pos.3</source>
+                <target>fel</target>
+            </trans-unit>
+            <trans-unit id="pos.4">
+                <source>pos.4</source>
+                <target>sifət</target>
+            </trans-unit>
+            <trans-unit id="pos.5">
+                <source>pos.5</source>
+                <target>say</target>
+            </trans-unit>
+            <trans-unit id="pos.6">
+                <source>pos.6</source>
+                <target>zərf</target>
+            </trans-unit>
+            <trans-unit id="pos.7">
+                <source>pos.7</source>
+                <target>əvəzlik</target>
+            </trans-unit>
+            <trans-unit id="pos.8">
+                <source>pos.8</source>
+                <target>bağlayıcı</target>
+            </trans-unit>
+            <trans-unit id="pos.9">
+                <source>pos.9</source>
+                <target>partical</target>
+            </trans-unit>
+            <trans-unit id="pos.10">
+                <source>pos.10</source>
+                <target>sözönü</target>
+            </trans-unit>
+            <trans-unit id="pos.11">
+                <source>pos.11</source>
+                <target>abbreviation</target>
+            </trans-unit>
+            <trans-unit id="pos.12">
+                <source>pos.12</source>
+                <target>past tense</target>
+            </trans-unit>
+            <trans-unit id="pos.13">
+                <source>pos.13</source>
+                <target>keçmiş zaman</target>
+            </trans-unit>
+            <trans-unit id="pos.14">
+                <source>pos.14</source>
+                <target>indiki zaman</target>
+            </trans-unit>
+            <trans-unit id="pos.15">
+                <source>pos.15</source>
+                <target>conjective pronoun</target>
+            </trans-unit>
+            <trans-unit id="pos.16">
+                <source>pos.16</source>
+                <target>demonstrative pronoun</target>
+            </trans-unit>
+            <trans-unit id="pos.17">
+                <source>pos.17</source>
+                <target>interrogative pronoun</target>
+            </trans-unit>
+            <trans-unit id="pos.18">
+                <source>pos.18</source>
+                <target>personal pronoun</target>
+            </trans-unit>
+            <trans-unit id="pos.19">
+                <source>pos.19</source>
+                <target>possessive pronoun</target>
+            </trans-unit>
+            <trans-unit id="pos.20">
+                <source>pos.20</source>
+                <target>qeyri-müəyyən zərf</target>
+            </trans-unit>
+            <trans-unit id="pos.21">
+                <source>pos.21</source>
+                <target>reflexive pronoun</target>
+            </trans-unit>
+            <trans-unit id="pos.22">
+                <source>pos.22</source>
+                <target>relative pronoun</target>
+            </trans-unit>
+            <trans-unit id="pos.23">
+                <source>pos.23</source>
+                <target>indefinite adverb</target>
+            </trans-unit>
+            <trans-unit id="pos.24">
+                <source>pos.24</source>
+                <target>interrogative adverb</target>
+            </trans-unit>
+            <trans-unit id="pos.25">
+                <source>pos.25</source>
+                <target>relative adverb</target>
+            </trans-unit>
+            <trans-unit id="pos.26">
+                <source>pos.26</source>
+                <target>prefix</target>
+            </trans-unit>
+            <trans-unit id="pos.27">
+                <source>pos.27</source>
+                <target>interjection</target>
+            </trans-unit>
+            <trans-unit id="pos.28">
+                <source>pos.28</source>
+                <target>singular</target>
+            </trans-unit>
+            <trans-unit id="pos.29">
+                <source>pos.29</source>
+                <target>söz birləşməsi</target>
+            </trans-unit>
+            <trans-unit id="pos.30">
+                <source>pos.30</source>
+                <target>cəm</target>
+            </trans-unit>
+            <trans-unit id="pos.31">
+                <source>pos.31</source>
+                <target>emphatic pronoun</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
